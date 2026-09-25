@@ -1,0 +1,32 @@
+[safe]
+	directory = /home/dss/sunfish
+	directory = /home/dss/sunfish/src/dyn-sim
+	directory = /home/dss/sunfish/src/board/aocs
+	directory = /home/dss/sunfish/src/board/aocs/src/nav
+
+[user]
+	email = sheldon.roberts@ast-science.com
+	name = Sheldon Roberts
+[pull]
+	ff = only
+	autoStash = true
+	rebase = true
+[merge]
+	ff = only
+	autoStash = true
+	commit = no
+[rebase]
+	ff = only
+	autoStash = true
+[push]
+	autoSetupRemote = true
+[diff]
+	tool = vscode
+	renames = copies
+[difftool "vscode"]
+	cmd = code --wait -d --diff \"$LOCAL\" \"$REMOTE\"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

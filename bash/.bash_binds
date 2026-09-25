@@ -1,0 +1,2 @@
+bind -x '"\C-l": printf "\033c"'
+bind -x '"\e[3;3~": kill -9 $$'

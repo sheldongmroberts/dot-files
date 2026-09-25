@@ -1,0 +1,255 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.closePanel",
+                "workbench.action.closeSidebar",
+                "workbench.action.closeAuxiliaryBar"
+            ]
+        },
+        "when": "sideBarVisible || panelVisible"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.togglePanel",
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        "when": "!sideBarVisible && !panelVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "runCommands",
+        "when": "terminalFocus || !terminalFocus",
+        "args": {
+            "commands": [
+                "workbench.action.focusActiveEditorGroup",
+                // "git-graph.view",
+                "git-graph.fetch"
+                // {
+                //     "command": "workbench.action.toggleAuxiliaryBar"
+                // }
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.toggleTerminal",
+                "workbench.action.toggleMaximizedPanel"
+            ]
+        },
+        "when": "!panelVisible"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelVisible"
+    },
+    {
+        "key": "alt+r",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.saveAll",
+                {
+                    "command": "workbench.action.tasks.runTask",
+                    "args": "Build DSS"
+                }
+            ]
+        }
+    },
+    {
+        "key": "alt+c",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "workbench.action.tasks.runTask",
+                    "args": "Coordinator"
+                }
+            ]
+        }
+    },
+    {
+        "key": "alt+v",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Cleanup"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "git.openChange",
+        "when": "editorFocus && !isInDiffEditor"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+x",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.action.terminal.openDetectedLink"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-hexEditor.goToOffset"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.terminal.goToRecentDirectory"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "ctrl+l g",
+        "command": "-extension.openInGitHub"
+    },
+    {
+        "key": "ctrl+l p",
+        "command": "-extension.openPrGitProvider"
+    },
+    {
+        "key": "ctrl+l c",
+        "command": "-extension.copyGitHubLinkToClipboard"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "claude-vscode.primaryEditor.open"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "runCommands",
+        "when": "editorTextFocus",
+        "args": {
+        "commands": [
+            "cursorUp",
+            {
+            "command": "editorScroll",
+            "args": { "to": "up", "by": "line" }
+            }
+        ]
+        }
+    },
+    {
+        "key": "ctrl+down",
+        "command": "runCommands",
+        "when": "editorTextFocus",
+        "args": {
+        "commands": [
+            "cursorDown",
+            {
+            "command": "editorScroll",
+            "args": { "to": "down", "by": "line" }
+            }
+        ]
+        }
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+e",
+        "when": "terminalFocus",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+home",
+        "command": "runCommands",
+        "args": {
+        "commands": [
+            "workbench.action.terminal.new",
+            "workbench.action.terminal.focus"
+        ]
+        }
+    },
+    {    
+        "key": "alt+`",
+        "command": "workbench.action.terminal.focusNext",
+    },
+    {
+        "key": "alt+shift+`",
+        "command": "workbench.action.terminal.focusPrevious",
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.increaseViewWidth"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-markdown.editor.cursorLogicalLineEnd",
+        "when": "false"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-markdown.editor.cursorLogicalLineEndSelect",
+        "when": "false"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    }
+]
