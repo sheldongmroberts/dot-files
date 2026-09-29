@@ -4,12 +4,12 @@
 ; CapsLock is only a modifier now, so it never toggles on
 SetCapsLockState "AlwaysOff"
 
-; While CapsLock is held: LAlt = left click, LWin = right click
+; While CapsLock is held: Space = left click, LAlt = right click
 #HotIf GetKeyState("CapsLock", "P")
-*LAlt::    Press("LButton")
-*LAlt Up:: Release("LButton")
-*LWin::    Press("RButton")
-*LWin Up:: Release("RButton")
+*Space::    Press("LButton")
+*Space Up:: Release("LButton")
+*LAlt::    Press("RButton")
+*LAlt Up:: Release("RButton")
 #HotIf
 
 ; If CapsLock is released first, don't leave a mouse button stuck down
