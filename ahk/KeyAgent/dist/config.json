@@ -1,0 +1,131 @@
+{
+  "defaultKeymap": "QWR",
+  "keymaps": [
+    {
+      "abbreviation": "QWR",
+      "layers": {
+        "base": {
+          "CapsLock": {"layer": "mouse", "mode": "holdAndDoubleTapToggle", "type": "layer"},
+          "RAlt": {"layer": "mod", "mode": "holdAndDoubleTapToggle", "type": "layer"}
+        },
+        "fn": {
+          ",": {"key": "Volume_Mute", "type": "key"},
+          "Insert": {"key": "Delete", "type": "key"},
+          "RAlt": {"key": "LWin", "type": "key"},
+          "\\": {"key": "Sleep", "type": "key"},
+          "i": {"key": "Volume_Up", "type": "key"},
+          "j": {"key": "Media_Prev", "type": "key"},
+          "k": {"key": "Volume_Down", "type": "key"},
+          "l": {"key": "Media_Next", "type": "key"},
+          "u": {"key": "Media_Play_Pause", "type": "key"}
+        },
+        "fn2": {
+          "Insert": {"key": "Delete", "type": "key"},
+          "RAlt": {"key": "LWin", "type": "key"}
+        },
+        "fn3": {},
+        "fn4": {},
+        "fn5": {},
+        "mod": {
+          "-": {"key": "F11", "type": "key"},
+          "/": {"key": "AppsKey", "type": "key"},
+          "0": {"key": "F10", "type": "key"},
+          "1": {"key": "F1", "type": "key"},
+          "2": {"key": "F2", "type": "key"},
+          "3": {"key": "F3", "type": "key"},
+          "4": {"key": "F4", "type": "key"},
+          "5": {"key": "F5", "type": "key"},
+          "6": {"key": "F6", "type": "key"},
+          "7": {"key": "F7", "type": "key"},
+          "8": {"key": "F8", "type": "key"},
+          "9": {"key": "F9", "type": "key"},
+          ";": {"key": "Backspace", "type": "key"},
+          "=": {"key": "F12", "type": "key"},
+          "Backspace": {"key": "Delete", "type": "key"},
+          "Insert": {"key": "Delete", "type": "key"},
+          "[": {"key": "PrintScreen", "type": "key"},
+          "\\": {"key": "Pause", "type": "key"},
+          "]": {"key": "ScrollLock", "type": "key"},
+          "`": {"key": "Esc", "type": "key"},
+          "a": {"key": "LWin", "type": "key"},
+          "c": {"key": "w", "mods": ["LCtrl"], "type": "key"},
+          "d": {"key": "Tab", "mods": ["LAlt"], "type": "key"},
+          "e": {"key": "t", "mods": ["LCtrl"], "type": "key"},
+          "f": {"key": "Right", "mods": ["LCtrl", "LAlt"], "type": "key"},
+          "h": {"key": "PgDn", "type": "key"},
+          "i": {"key": "Up", "type": "key"},
+          "j": {"key": "Left", "type": "key"},
+          "k": {"key": "Down", "type": "key"},
+          "l": {"key": "Right", "type": "key"},
+          "n": {"key": "Esc", "type": "key"},
+          "o": {"key": "End", "type": "key"},
+          "p": {"key": "Delete", "type": "key"},
+          "q": {"key": "Esc", "type": "key"},
+          "r": {"key": "PgDn", "mods": ["LCtrl"], "type": "key"},
+          "s": {"key": "Left", "mods": ["LCtrl", "LAlt"], "type": "key"},
+          "u": {"key": "Home", "type": "key"},
+          "v": {"key": "PgDn", "mods": ["LCtrl", "LShift"], "type": "key"},
+          "w": {"key": "PgUp", "mods": ["LCtrl"], "type": "key"},
+          "x": {"key": "PgUp", "mods": ["LCtrl", "LShift"], "type": "key"},
+          "y": {"key": "PgUp", "type": "key"}
+        },
+        "mouse": {
+          "Insert": {"key": "Delete", "type": "key"},
+          "LAlt": {"action": "rightClick", "type": "mouse"},
+          "RAlt": {"action": "rightClick", "type": "mouse"},
+          "Space": {"action": "leftClick", "type": "mouse"},
+          "h": {"action": "scrollDown", "type": "mouse"},
+          "i": {"action": "moveUp", "type": "mouse"},
+          "j": {"action": "moveLeft", "type": "mouse"},
+          "k": {"action": "moveDown", "type": "mouse"},
+          "l": {"action": "moveRight", "type": "mouse"},
+          "o": {"action": "scrollRight", "type": "mouse"},
+          "u": {"action": "scrollLeft", "type": "mouse"},
+          "y": {"action": "scrollUp", "type": "mouse"}
+        }
+      },
+      "name": "QWERTY for PC"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Go to UHK site in browser",
+      "steps": [
+        {"key": "l", "mode": "tap", "mods": ["LCtrl"], "type": "key"},
+        {"text": "https://ultimatehackingkeyboard.com", "type": "text"},
+        {"key": "Enter", "mode": "tap", "type": "key"}
+      ]
+    },
+    {
+      "name": "God mode in Doom",
+      "steps": [
+        {"text": "iddqd", "type": "text"}
+      ]
+    },
+    {
+      "name": "Type Silent Bob's address",
+      "steps": [
+        {"text": "Silent Bob\n711-2880 Nulla St.\nMankato Mississippi 96522\n(257) 563-7401", "type": "text"}
+      ]
+    }
+  ],
+  "settings": {
+    "diagonalSpeedCompensation": true,
+    "doubleTapLayerTimeout": 250,
+    "mouseMove": {"acceleratedSpeed": 64, "acceleration": 68, "baseSpeed": 32, "deceleratedSpeed": 12, "initialSpeed": 4},
+    "mouseScroll": {"acceleratedSpeed": 50, "acceleration": 20, "baseSpeed": 20, "deceleratedSpeed": 10, "initialSpeed": 20},
+    "osdHeld": false,
+    "osdLocked": true,
+    "pauseWhenUhkConnected": true,
+    "secondaryRoleDoubletapTimeout": 200,
+    "secondaryRoleDoubletapToPrimary": false,
+    "secondaryRoleStrategy": "Simple",
+    "secondaryRoleTimeout": 1000,
+    "secondaryRoleTimeoutAction": "Secondary",
+    "secondaryRoleTrigger": "Press",
+    "secondaryRoleTriggerByMouse": true,
+    "smoothScroll": false,
+    "uhkDongleCounts": false
+  },
+  "version": 1
+}
